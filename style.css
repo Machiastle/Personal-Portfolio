@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Mukta:wght@200;500&family=Noto+Sans+Linear+B&family=Nunito+Sans:opsz,wght@6..12,500&family=Nunito:wght@500&family=Permanent+Marker&family=Poppins:ital,wght@1,300&family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -13,10 +14,11 @@ body {
   margin: 0;
 }
 #desktop_nav {
-  background-color: #8083ff;
+  background-color: black;
   position: sticky;
+  top: 0;
   width: 100%;
-  padding: 20px 10px 30px;
+  padding: 20px 10px 1px;
 }
 .nav-container {
   display: flex;
@@ -27,7 +29,7 @@ body {
 }
 .logo img {
   height: 50%;
-  width: 50%;
+  width: 40%;
 }
 /* This is responsible for designing the navigation links such as its positions, padding from each other, and designs. */
 .nav-menu {
@@ -36,7 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: 80px;
-  margin-right: 20px;
+  margin-right: 100px;
 }
 .nav-menu li {
   margin-right: 10px;
@@ -49,7 +51,9 @@ body {
 
 .nav-menu li a {
   text-decoration: none;
-  color: black;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 21px;
   font-weight: bold;
   position: relative;
 }
@@ -61,7 +65,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #000;
+  background-color: white;
   transition: width 0.3s ease-in-out;
 }
 
@@ -72,8 +76,21 @@ body {
 
 #hamburger-nav {
   display: none;
+  background-color: black;
+  position: sticky;
+  width: 100%;
+  padding: 20px 10px 10px;
+  justify-content: space-between;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
 }
 
+.logo img {
+  height: 100%;
+  width: 50%;
+}
 .hamburger-menu {
   position: relative;
   display: inline-block;
@@ -93,7 +110,7 @@ body {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   transition: all 0.3 ease-in-out;
 }
 
@@ -148,4 +165,93 @@ body {
 
 .hamburger-icon span:first-child {
   transform: none;
+}
+/*Profile Section*/
+#profile {
+  display: flex;
+  align-items: center;
+}
+.section_pic_container {
+  flex: 1; /* Allow the image container to grow as needed */
+  padding-left: 100px; /* Add some padding to create space between the sections */
+  margin-bottom: 20px;
+}
+
+.section_text_container {
+  flex: 2; /* Allow the text container to grow twice as much as the image container */
+  padding-left: 320px; /* Add some padding to create space between the sections */
+  text-align: left; /* Align text to the left within this container */
+  margin-bottom: 50px;
+}
+.Profile_Pic {
+  width: 450px;
+  height: 850px;
+}
+.intro,
+.name,
+.bio {
+  margin-bottom: 30px;
+}
+.intro {
+  font-size: 40px;
+  padding-left: 80px;
+  color: rgb(53, 53, 53);
+  font-family: "Mukta", sans-serif;
+  font-weight: bold;
+}
+.name {
+  font-size: 80px;
+  color: #000;
+  font-weight: bolder;
+  font-family: "Mukta", sans-serif;
+}
+.bio {
+  font-size: 40px;
+  padding-left: 90px;
+  color: rgb(53, 53, 53);
+  font-family: "Mukta", sans-serif;
+  font-weight: bold;
+}
+/*About Section*/
+.box-container {
+  width: 1290px; /* Set the width of the rectangle */
+  height: 540px; /* Set the height of the rectangle */
+  background-color: white; /* Set the background color of the rectangle */
+  border: 2px solid black; /* Add a border to the rectangle */
+  border-radius: 10px;
+  margin-left: 150px; /* Add padding inside the rectangle */
+  box-sizing: border-box; /* Include padding and border in the rectangle's total width and height */
+}
+.headline {
+  display: flex;
+}
+.title_about {
+  padding-left: 50px;
+  padding-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.line {
+  margin-top: 46px;
+  margin-left: 20px;
+  width: 40%; /* Set the width of the line to span the entire container */
+  height: 3px;
+  background-color: #000;
+}
+.contents {
+  display: flex;
+  align-items: center;
+}
+.pic {
+  width: 400px; /* Set the width of your image */
+  height: 400px; /* Set the height of your image (make sure it's the same as the width to create a perfect circle) */
+  border-radius: 50%; /* Make the image a circle */
+  margin: 0 50px 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.text_about p {
+  margin: 30px 20px 60px;
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5;
+  text-align: justify;
 }
