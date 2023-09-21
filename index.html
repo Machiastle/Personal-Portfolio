@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aj's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
   </head>
   <body>
     <nav id="desktop_nav">
       <div class="nav-container">
-        <div>
-          <img src="Assets/logo_white.png" alt="logo" class="logo" />
+        <div class="logo">
+          <img src="Assets/logo_white.png" alt="logo" />
         </div>
         <ul class="nav-menu">
           <li><a href="#about">About</a></li>
@@ -20,5 +21,24 @@
         </ul>
       </div>
     </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img src="Assets/logo_white.png" alt="logo" />
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+      </div>
+    </nav>
+    <script src="script.js"></script>
   </body>
 </html>

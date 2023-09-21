@@ -1,0 +1,23 @@
+@media screen and (max-width: 1200px) {
+  #desktop_nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    background-color: #8083ff;
+    position: sticky;
+    width: 100%;
+    padding: 20px 10px 10px;
+    justify-content: space-between;
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 100%;
+    width: 50%;
+  }
+}
