@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+}
+#desktop_nav {
+  background-color: #8083ff;
+  position: sticky;
+  width: 100%;
+  padding: 20px 10px 30px;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  padding-left: 50px;
+  height: 20%;
+  width: 40%;
+}
+/* This is responsible for designing the navigation links such as its positions, padding from each other, and designs. */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 20px;
+}
+.nav-menu li {
+  margin-right: 10px;
+  margin-left: 100px;
+}
+
+.nav-menu li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+}
+/* Apply the underline animation when user hovers over the nav links */
+.nav-menu li a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover::before {
+  width: 100%;
+}
