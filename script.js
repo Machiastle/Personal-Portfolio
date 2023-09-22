@@ -6,17 +6,31 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 //functions for skills button indicator
-// Get references to the buttons
-const techStackButton = document.getElementById('techStackButton');
-const toolsButton = document.getElementById('toolsButton');
+// Get references to buttons and containers
+const techStackButton = document.getElementById("techStackButton");
+const toolsButton = document.getElementById("toolsButton");
+const techStackImages = document.getElementById("Tech_StackImages");
+const toolsImages = document.getElementById("tools_Images");
 
-// Function to switch button styles
+// Function to toggle button styles
 function switchButtonStyles() {
-  // Toggle the "default_button" class for both buttons
-  techStackButton.classList.toggle('default_button');
-  toolsButton.classList.toggle('default_button');
+  techStackButton.classList.toggle("default_button");
+  toolsButton.classList.toggle("default_button");
+
+  // Toggle the visibility of image containers based on which button is clicked
+  if (techStackButton.classList.contains("default_button")) {
+    techStackImages.style.display = "flex"; // Show tech stack images
+    toolsImages.style.display = "none"; // Hide tools images
+  } else {
+    techStackImages.style.display = "none"; // Hide tech stack images
+    toolsImages.style.display = "flex"; // Show tools images
+  }
 }
 
-// Add a click event listener to both buttons
-techStackButton.addEventListener('click', switchButtonStyles);
-toolsButton.addEventListener('click', switchButtonStyles);
+// Add click event listeners to both buttons
+techStackButton.addEventListener("click", switchButtonStyles);
+toolsButton.addEventListener("click", switchButtonStyles);
+
+// Initially, set the initial state (e.g., tech stack images are visible, tools images are hidden)
+techStackImages.style.display = "flex";
+toolsImages.style.display = "none";

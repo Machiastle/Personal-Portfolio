@@ -289,28 +289,154 @@ body {
   border-radius: 5px;
   border: 2px solid black; /* Border color (slightly darker than background color) */
 }
+.buttons_container {
+  margin: 10px 200px 0;
+}
+.button {
+  padding: 5px 5px;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.default_button {
+  padding: 5px 5px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+/* Specific styles for .tech_stack buttons */
 .tech_stack {
-  display: flex; /* Use flexbox to arrange buttons horizontally */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 10px; /* Adjust the gap between buttons as needed */
 }
 
-button {
-  display: flex; /* Use flexbox for button content */
-  align-items: center; /* Center content vertically */
-  padding: 5px 10px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 5px;
+.tech_stack button {
+  flex: 0 1 calc(30% - 20px); /* Adjust as needed, subtract the gap */
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Add some space between rows */
 }
 
-button img {
+.tech_stack,
+.tools {
+  display: flex; /* Use flexbox to arrange buttons horizontally */
+  gap: 10px; /* Adjust the gap between buttons as needed */
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.tech_stack button,
+.tools button {
+  display: flex; /* Use flexbox for button content */
+  align-items: center; /* Center content vertically */
+  padding: 5px 5px;
+  background-color: white;
+  color: black;
+  border-color: #000;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.tech_stack button img,
+.tools button img {
   width: 30px; /* Adjust the image width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-right: 5px; /* Add spacing between image and text */
+  transition: transform 0.3s ease; /* Add a transition for the image */
 }
 
-/* Additional styling for button hover effects */
-button:hover {
-  background-color: #2980b9;
+/* Additional styling for .tech_stack buttons' hover effects */
+.tech_stack button:hover,
+.tools button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Additional styling for .tech_stack buttons' hover effects on the image */
+.tech_stack button:hover img,
+.tools button:hover img {
+  transform: scale(1.1); /* Slightly scale up the image on hover */
+}
+/*Projects Section*/
+.Projects_title {
+  display: flex;
+}
+.title_projects {
+  padding-left: 200px;
+  padding-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.line_projects {
+  margin-top: 46px;
+  margin-left: 10px;
+  width: 10%; /* Set the width of the line to span the entire container */
+  height: 3px;
+  background-color: #000;
+}
+.Project_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 160px;
+}
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6 {
+  width: calc(33.33% - 10px); /* Adjust as needed, subtract the gap */
+  margin-bottom: 20px; /* Add some space between rows */
+  box-sizing: border-box;
+  background-color: white; /* White background */
+  border: 2px solid black; /* Black border */
+  padding: 20px; /* Add some padding for spacing */
+  width: 400px; /* Set the width of the div */
+  height: 600px;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-right: 20px;
+}
+
+.projectimage img {
+  width: 70%;
+  max-width: 400px;
+  height: auto;
+  margin-left: 70px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid black; /* Add a black border around the image */
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.4);
+}
+.project_title {
+  margin: 30px 10px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.project_description {
+  margin: 10px 0 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.project_lang {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: rgb(53, 53, 53);
+}
+.project2 .project_description {
+  margin-top: 1px;
+}
+.project2 .project_title {
+  margin-bottom: 1px;
 }
