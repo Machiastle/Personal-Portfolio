@@ -5,8 +5,6 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
-//functions for skills button indicator
-// Get references to buttons and containers
 const techStackButton = document.getElementById("techStackButton");
 const toolsButton = document.getElementById("toolsButton");
 const techStackImages = document.getElementById("Tech_StackImages");

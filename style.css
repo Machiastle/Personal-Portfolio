@@ -14,11 +14,9 @@ body {
   margin: 0;
 }
 #desktop_nav {
-  background-color: black;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 20px 10px 1px;
+  background: black; /* Set the background color to white */
+  color: white; /* Set the text color to white */
+  text-align: center; /* Center-align text */
 }
 .nav-container {
   display: flex;
@@ -310,52 +308,54 @@ body {
   border: 2px solid black;
 }
 
-/* Specific styles for .tech_stack buttons */
+.tech_stack_container,
+.tools_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 0; /* Adjusted from 20px to 0 */
+}
+
 .tech_stack,
 .tools {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 200px;
-  margin-top: 40px;
-}
-
-.tech_stack1,
-.tech_stack2,
-.tech_stack3,
-.tech_stack4,
-.tech_stack5,
-.tech_stack6,
-.tech_stack7,
-.tools1,
-.tools2,
-.tools3 {
-  width: calc(
-    33.33% - 30px
-  ); /* Set the width for each div (account for margin) */
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+  flex-basis: calc(33.33% - 150px);
   height: 50px;
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 45px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px; /* Add margin at the bottom to separate rows */
-  margin-right: 30px;
+  gap: 10px;
+}
+.tech_stack:hover,
+.tools:hover {
+  background-color: #343232; /* Background color on hover (black) */
+  color: #ffffff; /* Text color on hover (white) */
+}
+.tech_stack .ts_img img,
+.tools .tools_img img {
+  width: 35px; /* Set the desired width for the image */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  padding-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.tech_stack1 img,
-.tech_stack2 img,
-.tech_stack3 img,
-.tech_stack4 img,
-.tech_stack5 img,
-.tech_stack6 img,
-.tech_stack7 img,
-.tools_img1 img,
-.tools_img2 img,
-.tools_img3 img {
-  width: 40px; /* Set the desired width for the image */
-  height: 40px; /* Maintain the aspect ratio */
-  margin: 0 40px 0; /* Add some spacing between the image and text */
+.tech_stack .ts_text h3,
+.tools .tools_text h3 {
+  font-size: 15px; /* Adjust the text size */
+}
+.tools_container {
+  display: none;
 }
 /*Projects Section*/
 .Projects_title {
