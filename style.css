@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Mukta:wght@200;500&family=Noto+Sans+Linear+B&family=Nunito+Sans:opsz,wght@6..12,500&family=Nunito:wght@500&family=Permanent+Marker&family=Poppins:ital,wght@1,300&family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Mukta:wght@200;500&family=Noto+Sans+Linear+B&family=Nunito+Sans:opsz,wght@6..12,500&family=Nunito:wght@500&family=Permanent+Marker&family=Poppins:ital,wght@1,300&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:wght@400;500;700&family=Work+Sans:wght@500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -180,11 +180,15 @@ body {
   padding-left: 320px; /* Add some padding to create space between the sections */
   text-align: left; /* Align text to the left within this container */
   margin-bottom: 50px;
+  margin-top: 80px;
 }
 .Profile_Pic {
-  width: 450px;
-  height: 850px;
+  max-width: 450px; /* Set the maximum width */
+  max-height: 850px; /* Set the maximum height */
+  width: 105%; /* Allow it to expand within the max width */
+  height: auto; /* Maintain aspect ratio */
 }
+
 .intro,
 .name,
 .bio {
@@ -210,6 +214,7 @@ body {
   font-family: "Mukta", sans-serif;
   font-weight: bold;
 }
+
 /*About Section*/
 .box-container {
   width: 1290px; /* Set the width of the rectangle */
@@ -396,18 +401,40 @@ body {
   border-radius: 10px;
   margin-top: 80px;
   margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover,
+.project6:hover {
+  transform: scale(1.1); /* Scale up to 110% on hover */
+  background-color: #f0eded;
 }
 
 .projectimage img {
-  width: 70%;
+  width: 90%;
   max-width: 400px;
   height: auto;
-  margin-left: 70px;
+  margin-left: 20px;
   margin-top: 20px;
   border-radius: 10px;
   border: 2px solid black; /* Add a black border around the image */
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.4);
 }
+.project5 img {
+  width: 130px;
+  margin-left: 110px;
+}
+.project6 img {
+  width: 300px;
+  height: 150px;
+  object-fit: fill;
+  margin-top: 80px;
+}
+
 .project_title {
   margin: 30px 10px 20px;
   display: flex;
@@ -429,8 +456,18 @@ body {
   margin-top: 1px;
 }
 .project2 .project_title {
-  margin-bottom: 1px;
+  margin-bottom: 20px;
 }
+.Project_container p {
+  font-family: "Nunito Sans", sans-serif;
+}
+.Project_container h1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.Project_container h2 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 /*Experience*/
 .Experience_title {
   display: flex;
@@ -476,7 +513,7 @@ body {
 }
 .school_title,
 .work_title {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
@@ -497,7 +534,7 @@ body {
 
 .school_list li,
 .work_list li {
-  font-family: "Arial", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 15px;
   color: #000;
   padding: 15px 0;
@@ -588,7 +625,7 @@ body {
 .contact_me h3,
 .hire_me h3 {
   margin: 10px 0 10px; /* Add some space between the title and icons */
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
@@ -616,6 +653,7 @@ body {
   width: 150px;
   height: 50px;
   font-size: 18px;
+
   border-radius: 25px; /* Slightly reduce border radius */
   border: 2px solid black; /* Add a border */
   text-align: center;
@@ -632,6 +670,7 @@ body {
   transform: scale(1.05); /* Slight scale increase on hover */
   box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.8);
 }
+
 .socials_content {
   display: flex;
   justify-content: center;

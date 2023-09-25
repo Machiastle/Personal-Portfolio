@@ -32,3 +32,35 @@ toolsButton.addEventListener("click", switchButtonStyles);
 // Initially, set the initial state (e.g., tech stack images are visible, tools images are hidden)
 techStackImages.style.display = "flex";
 toolsImages.style.display = "none";
+
+//For typing animation
+const bioText = document.getElementById('bio-text');
+const bioOptions = ['BSIS-NS STUDENT', 'DATA SCIENTIST', 'CYBERSECURITY', 'WEB DEVELOPER'];
+let index = 0;
+let isTyping = true;
+
+function typeAndDelete() {
+  const text = bioOptions[index];
+  let delay = 100; // 1 seconds
+
+  if (isTyping) {
+    if (bioText.textContent === text) {
+      isTyping = false;
+    } else {
+      bioText.textContent += text.charAt(bioText.textContent.length);
+      
+    }
+  } else {
+    if (bioText.textContent === '') {
+      isTyping = true;
+      index = (index + 1) % bioOptions.length;
+      
+    } else {
+      bioText.textContent = text.slice(0, bioText.textContent.length - 1);
+    }
+  }
+
+  setTimeout(typeAndDelete, delay);
+}
+
+typeAndDelete();
