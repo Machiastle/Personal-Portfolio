@@ -35,7 +35,7 @@ toolsImages.style.display = "none";
 
 //For typing animation
 const bioText = document.getElementById('bio-text');
-const bioOptions = ['BSIS-NS STUDENT', 'DATA SCIENTIST', 'CYBERSECURITY', 'WEB DEVELOPER'];
+const bioOptions = ['BSIS-NS STUDENT   ', 'DATA SCIENTIST   ', 'CYBERSECURITY   ', 'WEB DEVELOPER   '];
 let index = 0;
 let isTyping = true;
 

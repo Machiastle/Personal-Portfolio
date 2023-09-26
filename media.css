@@ -1,9 +1,237 @@
 @media screen and (max-width: 1200px) {
-  #desktop_nav {
+  #desktop-nav {
     display: none;
   }
 
   #hamburger-nav {
     display: flex;
+  }
+  /*profile section*/
+  #profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Profile_Pic {
+    max-width: 450px;
+    max-height: 450px;
+    width: 100%;
+  }
+  .section_pic_container {
+    margin-left: 20px; /* Add some padding to create space between the sections */
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .section_text_container {
+    padding-left: 10px; /* Add some padding to create space between the sections */
+    text-align: center; /* Align text to the left within this container */
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+  .intro,
+  .name,
+  .bio {
+    margin-bottom: 5px;
+  }
+  .intro {
+    font-size: 20px;
+    padding-left: 40px;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .bio {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  /*about section*/
+  .box-container {
+    width: 330px; /* Set the width of the rectangle */
+    height: 610px; /* Set the height of the rectangle */
+    background-color: white; /* Set the background color of the rectangle */
+    border: 2px solid black; /* Add a border to the rectangle */
+    border-radius: 10px;
+    margin-left: 30px; /* Add padding inside the rectangle */
+    margin-top: 100px;
+    box-sizing: border-box; /* Include padding and border in the rectangle's total width and height */
+  }
+  .title_about {
+    padding-left: 50px;
+    padding-top: 10px;
+  }
+  .line {
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 20%; /* Set the width of the line to span the entire container */
+  }
+  .contents {
+    display: flex;
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Center text within the container */
+  }
+  .pic {
+    width: 200px; /* Set the width of your image */
+    height: 200px; /* Set the height of your image (make sure it's the same as the width to create a perfect circle) */
+    margin-top: 20px;
+  }
+  .text_about p {
+    margin: 10px 20px 30px;
+    font-size: 12px;
+    line-height: 1;
+    text-align: justify;
+    font-weight: bold;
+  }
+  .title_skills {
+    padding-left: 50px;
+  }
+  .line_skills {
+    margin-left: 20px;
+  }
+  .buttons_container {
+    margin: 10px 100px 0;
+    display: flex;
+  }
+  .button {
+    padding: 5px 5px;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  .default_button {
+    padding: 5px 5px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  .tech_stack_container,
+  .tools_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tech_stack,
+  .tools {
+    flex-basis: calc(50% - 20px); /* Changed from 33.33% to 50% */
+  }
+  #projects {
+    margin-top: 100px;
+  }
+  .title_projects {
+    padding-left: 50px;
+  }
+  .Project_container {
+    margin-left: 80px;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project6 {
+    width: 300px; /* Set the width of the div */
+    height: 600px;
+  }
+  .project5 {
+    height: 620px;
+  }
+  .projectimage img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid black; /* Add a black border around the image */
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.4);
+  }
+  .project1 img {
+    width: 200px;
+    height: 200px;
+  }
+  .project5 img {
+    width: 120px;
+    margin-left: 50px;
+  }
+  .project6 img {
+    width: 200px;
+    height: 150px;
+    object-fit: fill;
+    margin-top: 50px;
+  }
+  .project1 .project_description p,
+  .project5 .project_description p {
+    font-size: 14px;
+  }
+  .project5 .project_lang h2 {
+    font-size: 22px;
+  }
+  .title_experience {
+    padding-left: 50px;
+  }
+  .experience_container {
+    display: flex;
+    flex-direction: column; /* Stack the divs vertically */
+  }
+
+  .school,
+  .work {
+    width: 300px;
+    margin-left: 40px;
+  }
+  .school {
+    height: 380px;
+  }
+  .school_list li {
+    padding: 0 20px 20px;
+  }
+  .main_container {
+    display: flex;
+    flex-direction: column; /* Stack the divs vertically */
+  }
+  .main_title_contact {
+    padding-left: 50px;
+  }
+  .contact_me_container,
+  .contact_container {
+    width: 330px;
+    height: 680px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  .contact_me,
+  .hire_me,
+  .socials {
+    width: 300px; /* Each div takes the full width of its cell */
+    height: 150px;
+  }
+  .socials h3,
+  .contact_me h3,
+  .hire_me h3 {
+    margin-left: 100px;
+  }
+  .my_contacts li {
+    font-size: 18px;
+  }
+  .hire_me button {
+    margin-left: 80px;
+  }
+  .socials_content {
+    margin-right: 30px;
+  }
+  .socials i {
+    margin-left: 22px;
   }
 }
