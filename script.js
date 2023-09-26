@@ -64,3 +64,15 @@ function typeAndDelete() {
 }
 
 typeAndDelete();
+//Script for contact form
+const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyQCG2VPANX9weqSygF77ygiEG2yYqmjtsZKUhaQCdjQjxBqagMT3Om-Z4Ob1XwCK04/exec";
+    const form = document.forms["submit-to-google-sheet"];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) }).then(
+        (response) => console.log("Success!", response)
+      );
+      form.reset().catch((error) => console.error("Error!", error.message));
+    });
