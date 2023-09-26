@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   #desktop-nav {
     display: none;
   }
@@ -50,12 +50,8 @@
   .box-container {
     width: 330px; /* Set the width of the rectangle */
     height: 610px; /* Set the height of the rectangle */
-    background-color: white; /* Set the background color of the rectangle */
-    border: 2px solid black; /* Add a border to the rectangle */
-    border-radius: 10px;
     margin-left: 30px; /* Add padding inside the rectangle */
     margin-top: 100px;
-    box-sizing: border-box; /* Include padding and border in the rectangle's total width and height */
   }
   .title_about {
     padding-left: 50px;
