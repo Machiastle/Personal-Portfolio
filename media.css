@@ -178,6 +178,10 @@
 }
 /* Targets devices that has a maximum width of 950px */
 @media screen and (max-width: 950px) {
+  .box-container {
+    width: 820px;
+    margin-left: 80px;
+  }
   .Profile_Pic {
     width: 190%;
     height: auto;
