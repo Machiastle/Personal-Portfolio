@@ -135,23 +135,23 @@ a:hover {
   align-items: center;
 }
 .section_pic_container {
-  flex: 1; /* Allow the image container to grow as needed */
-  padding-left: 100px; /* Add some padding to create space between the sections */
+  flex: 1;
+  padding-left: 100px;
   margin-bottom: 20px;
 }
 
 .section_text_container {
-  flex: 2; /* Allow the text container to grow twice as much as the image container */
-  padding-left: 320px; /* Add some padding to create space between the sections */
-  text-align: left; /* Align text to the left within this container */
+  flex: 2;
+  padding-left: 320px;
+  text-align: left;
   margin-bottom: 50px;
   margin-top: 80px;
 }
 .Profile_Pic {
-  max-width: 450px; /* Set the maximum width */
-  max-height: 850px; /* Set the maximum height */
-  width: 105%; /* Allow it to expand within the max width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 450px;
+  max-height: 850px;
+  width: 105%;
+  height: auto;
 }
 
 .intro,
@@ -182,13 +182,13 @@ a:hover {
 
 /*About Section*/
 .box-container {
-  width: 1290px; /* Set the width of the rectangle */
-  height: 540px; /* Set the height of the rectangle */
-  background-color: white; /* Set the background color of the rectangle */
-  border: 2px solid black; /* Add a border to the rectangle */
+  width: 1290px;
+  height: 540px;
+  background-color: white;
+  border: 2px solid black;
   border-radius: 10px;
-  margin-left: 150px; /* Add padding inside the rectangle */
-  box-sizing: border-box; /* Include padding and border in the rectangle's total width and height */
+  margin-left: 150px;
+  box-sizing: border-box;
 }
 .headline {
   display: flex;
@@ -201,7 +201,7 @@ a:hover {
 .line {
   margin-top: 46px;
   margin-left: 20px;
-  width: 40%; /* Set the width of the line to span the entire container */
+  width: 40%;
   height: 3px;
   background-color: #000;
 }
@@ -210,9 +210,9 @@ a:hover {
   align-items: center;
 }
 .pic {
-  width: 400px; /* Set the width of your image */
-  height: 400px; /* Set the height of your image (make sure it's the same as the width to create a perfect circle) */
-  border-radius: 50%; /* Make the image a circle */
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
   margin: 0 50px 30px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 }
@@ -234,7 +234,7 @@ a:hover {
 .line_skills {
   margin-top: 46px;
   margin-left: 50px;
-  width: 10%; /* Set the width of the line to span the entire container */
+  width: 10%;
   height: 3px;
   background-color: #000;
 }
@@ -268,7 +268,7 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 0; /* Adjusted from 20px to 0 */
+  margin-left: 0;
 }
 
 .tech_stack,
@@ -290,13 +290,13 @@ a:hover {
 }
 .tech_stack:hover,
 .tools:hover {
-  background-color: #343232; /* Background color on hover (black) */
-  color: #ffffff; /* Text color on hover (white) */
+  background-color: #343232;
+  color: #ffffff;
 }
 .tech_stack .ts_img img,
 .tools .tools_img img {
-  width: 35px; /* Set the desired width for the image */
-  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  width: 35px;
+  height: auto;
   padding-top: 5px;
   margin-left: 20px;
   margin-right: 20px;
@@ -304,7 +304,7 @@ a:hover {
 
 .tech_stack .ts_text h3,
 .tools .tools_text h3 {
-  font-size: 15px; /* Adjust the text size */
+  font-size: 15px;
 }
 .tools_container {
   display: none;
@@ -321,7 +321,7 @@ a:hover {
 .line_projects {
   margin-top: 46px;
   margin-left: 10px;
-  width: 10%; /* Set the width of the line to span the entire container */
+  width: 10%;
   height: 3px;
   background-color: #000;
 }
@@ -337,13 +337,13 @@ a:hover {
 .project4,
 .project5,
 .project6 {
-  width: calc(33.33% - 10px); /* Adjust as needed, subtract the gap */
-  margin-bottom: 20px; /* Add some space between rows */
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
   box-sizing: border-box;
-  background-color: white; /* White background */
-  border: 2px solid black; /* Black border */
-  padding: 20px; /* Add some padding for spacing */
-  width: 400px; /* Set the width of the div */
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  width: 400px;
   height: 600px;
   border-radius: 10px;
   margin-top: 80px;
@@ -357,7 +357,7 @@ a:hover {
 .project4:hover,
 .project5:hover,
 .project6:hover {
-  transform: scale(1.1); /* Scale up to 110% on hover */
+  transform: scale(1.1);
   background-color: #f0eded;
 }
 
@@ -368,7 +368,7 @@ a:hover {
   margin-left: 20px;
   margin-top: 20px;
   border-radius: 10px;
-  border: 2px solid black; /* Add a black border around the image */
+  border: 2px solid black;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.4);
 }
 .project1 img {
@@ -621,7 +621,7 @@ a:hover {
 .contact_me,
 .hire_me,
 .socials {
-  width: 500px; /* Each div takes the full width of its cell */
+  width: 500px;
   height: 140px;
   background-color: white;
   border: 2px solid black;
@@ -633,7 +633,7 @@ a:hover {
 .socials h3,
 .contact_me h3,
 .hire_me h3 {
-  margin: 10px 0 10px; /* Add some space between the title and icons */
+  margin: 10px 0 10px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -653,7 +653,7 @@ a:hover {
 .my_contacts {
   list-style: none;
   padding: 0;
-  text-align: center; /* Center the list items horizontally */
+  text-align: center;
 }
 
 .my_contacts li {
@@ -676,8 +676,8 @@ a:hover {
   width: 150px;
   height: 50px;
   font-size: 18px;
-  border-radius: 25px; /* Slightly reduce border radius */
-  border: 2px solid black; /* Add a border */
+  border-radius: 25px;
+  border: 2px solid black;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -689,7 +689,7 @@ a:hover {
 .hire_me button:hover {
   color: white;
   background: black;
-  transform: scale(1.05); /* Slight scale increase on hover */
+  transform: scale(1.05);
   box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.8);
 }
 
@@ -705,9 +705,9 @@ a:hover {
   margin-top: 15px;
   margin-left: 80px;
   color: black;
-  background: transparent; /* Set the initial background as transparent */
+  background: transparent;
   transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
-    background 0.3s ease; /* Add background transition */
+    background 0.3s ease;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   padding: 10px;
@@ -716,7 +716,7 @@ a:hover {
 .socials_content i:hover {
   transform: scale(1.2);
   color: white;
-  background: black; /* Set the background to black on hover */
+  background: black;
   box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.8);
   animation: float 2s ease infinite;
 }
@@ -736,10 +736,10 @@ a:hover {
 
 footer {
   margin-top: 100px;
-  background: black; /* Set the background color to white */
-  color: white; /* Set the text color to white */
-  text-align: center; /* Center-align text */
-  padding: 20px; /* Add some padding for spacing */
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 footer p {
